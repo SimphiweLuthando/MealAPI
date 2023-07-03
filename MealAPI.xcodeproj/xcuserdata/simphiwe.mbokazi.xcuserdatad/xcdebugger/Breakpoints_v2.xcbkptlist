@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8499FA38-4084-4DAB-AE9E-C01E1A63D9B4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "716D2A1A-3DB1-4C0A-8D2D-6BD17C0B8E8A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MealAPI/ViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "ViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "716D2A1A-3DB1-4C0A-8D2D-6BD17C0B8E8A - 3439f14e8ed60d2b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of MealAPI.ViewModel.meals : Swift.Array&lt;MealAPI.Meal&gt;"
+                  moduleName = "MealAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simphiwe.mbokazi/Documents/SwiftProjects/MealAPI/MealAPI/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "716D2A1A-3DB1-4C0A-8D2D-6BD17C0B8E8A - 3b85c0bc80c7a401"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MealAPI.ViewModel.meals.getter : Swift.Array&lt;MealAPI.Meal&gt;"
+                  moduleName = "MealAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simphiwe.mbokazi/Documents/SwiftProjects/MealAPI/MealAPI/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "716D2A1A-3DB1-4C0A-8D2D-6BD17C0B8E8A - 2eeba3b89f8850fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MealAPI.ViewModel.meals.setter : Swift.Array&lt;MealAPI.Meal&gt;"
+                  moduleName = "MealAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simphiwe.mbokazi/Documents/SwiftProjects/MealAPI/MealAPI/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "716D2A1A-3DB1-4C0A-8D2D-6BD17C0B8E8A - 36a0aab49ab1770c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MealAPI.ViewModel.meals.modify : Swift.Array&lt;MealAPI.Meal&gt;"
+                  moduleName = "MealAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simphiwe.mbokazi/Documents/SwiftProjects/MealAPI/MealAPI/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "716D2A1A-3DB1-4C0A-8D2D-6BD17C0B8E8A - 2d42f73690f8e9fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MealAPI.ViewModel.meals.modify : Swift.Array&lt;MealAPI.Meal&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MealAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simphiwe.mbokazi/Documents/SwiftProjects/MealAPI/MealAPI/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "716D2A1A-3DB1-4C0A-8D2D-6BD17C0B8E8A - 9d78b64ba3ef12e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MealAPI.ViewModel.$meals.getter : Combine.Published&lt;Swift.Array&lt;MealAPI.Meal&gt;&gt;.Publisher"
+                  moduleName = "MealAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simphiwe.mbokazi/Documents/SwiftProjects/MealAPI/MealAPI/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "716D2A1A-3DB1-4C0A-8D2D-6BD17C0B8E8A - 3f0678a89696fad2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MealAPI.ViewModel.$meals.setter : Combine.Published&lt;Swift.Array&lt;MealAPI.Meal&gt;&gt;.Publisher"
+                  moduleName = "MealAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simphiwe.mbokazi/Documents/SwiftProjects/MealAPI/MealAPI/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "716D2A1A-3DB1-4C0A-8D2D-6BD17C0B8E8A - c0190212de5360b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MealAPI.ViewModel.$meals.modify : Combine.Published&lt;Swift.Array&lt;MealAPI.Meal&gt;&gt;.Publisher"
+                  moduleName = "MealAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simphiwe.mbokazi/Documents/SwiftProjects/MealAPI/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "716D2A1A-3DB1-4C0A-8D2D-6BD17C0B8E8A - 56fe37e3e611f7f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MealAPI.ViewModel.$meals.modify : Combine.Published&lt;Swift.Array&lt;MealAPI.Meal&gt;&gt;.Publisher with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MealAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simphiwe.mbokazi/Documents/SwiftProjects/MealAPI/MealAPI/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "716D2A1A-3DB1-4C0A-8D2D-6BD17C0B8E8A - d9a3ccc0a35c334a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MealAPI.ViewModel.init() -&gt; MealAPI.ViewModel"
+                  moduleName = "MealAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simphiwe.mbokazi/Documents/SwiftProjects/MealAPI/MealAPI/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "216">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D03F94DA-FB29-4DBE-B6D3-B16850A7C54B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MealAPI/DrinksViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "fetchRecipe(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "87F76B89-B7CE-4C44-AAC3-C279D03F45D5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MealAPI/DrinksViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "fetchRecipe(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
