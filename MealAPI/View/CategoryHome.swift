@@ -11,6 +11,7 @@ struct URLImageHome: View{
     let urlString: String
     
     
+    
     @State var data: Data?
     
     var body: some View{
@@ -46,6 +47,7 @@ struct CategoryHome: View {
     var viewModel = ViewModel()
     var chickenViewModel = ChickenViewModel()
     let colors = [Color(.systemMint), Color(.systemBlue)]
+    @State private var showingProfile = false
     
     var body: some View {
         
@@ -61,7 +63,18 @@ struct CategoryHome: View {
                     .listRowInsets(EdgeInsets())
                 
             }
+            .listStyle(.inset)
             .navigationTitle("MealMe")
+            .toolbar {
+                Button {
+                    showingProfile.toggle()
+                } label: {
+                    Label("User Profile", systemImage: "person.crop.circle")
+                }
+            }
+            .sheet(isPresented: $showingProfile) {
+                ProfileHost()
+            }
         }
         
     }

@@ -13,6 +13,8 @@
 		5A1831C82A4DC49C00B0A6C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1831C72A4DC49C00B0A6C8 /* Preview Assets.xcassets */; };
 		5A1831D52A4DEDCA00B0A6C8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1831D42A4DEDCA00B0A6C8 /* ViewModel.swift */; };
 		5A1831D72A4DF43700B0A6C8 /* MealDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1831D62A4DF43700B0A6C8 /* MealDetailsView.swift */; };
+		5A4560F22A5EE5BC006126C7 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4560F12A5EE5BC006126C7 /* Profile.swift */; };
+		5A4560F42A5EE615006126C7 /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4560F32A5EE615006126C7 /* ProfileHost.swift */; };
 		5AA283302A517F54004C3B39 /* DrinksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA2832F2A517F54004C3B39 /* DrinksViewModel.swift */; };
 		5AA283322A5182AF004C3B39 /* DrinksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA283312A5182AF004C3B39 /* DrinksListView.swift */; };
 		5AA283342A5185A9004C3B39 /* DrinksDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA283332A5185A9004C3B39 /* DrinksDetailsView.swift */; };
@@ -39,6 +41,8 @@
 		5A1831C72A4DC49C00B0A6C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A1831D42A4DEDCA00B0A6C8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		5A1831D62A4DF43700B0A6C8 /* MealDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailsView.swift; sourceTree = "<group>"; };
+		5A4560F12A5EE5BC006126C7 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		5A4560F32A5EE615006126C7 /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 		5AA2832F2A517F54004C3B39 /* DrinksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksViewModel.swift; sourceTree = "<group>"; };
 		5AA283312A5182AF004C3B39 /* DrinksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksListView.swift; sourceTree = "<group>"; };
 		5AA283332A5185A9004C3B39 /* DrinksDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksDetailsView.swift; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 				5AF3F7022A4EF46800FCA98D /* CategoryRow.swift */,
 				5AF3F7082A5002E900FCA98D /* ChickenCategoryRow.swift */,
 				5AF3F7042A4EF69600FCA98D /* CategoryItem.swift */,
+				5A4560F32A5EE615006126C7 /* ProfileHost.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 				5A1831D42A4DEDCA00B0A6C8 /* ViewModel.swift */,
 				5AA2832F2A517F54004C3B39 /* DrinksViewModel.swift */,
 				5AF3F70A2A500A8500FCA98D /* DessertViewModel.swift */,
+				5A4560F12A5EE5BC006126C7 /* Profile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AF3F6FA2A4ED47100FCA98D /* YoutubeEmbed.swift in Sources */,
+				5A4560F22A5EE5BC006126C7 /* Profile.swift in Sources */,
 				5AA283322A5182AF004C3B39 /* DrinksListView.swift in Sources */,
 				5AF3F7012A4EF3AB00FCA98D /* CategoryHome.swift in Sources */,
 				5AF3F7112A50521000FCA98D /* FavoriteMealsManager.swift in Sources */,
@@ -228,6 +235,7 @@
 				5A1831D72A4DF43700B0A6C8 /* MealDetailsView.swift in Sources */,
 				5AF3F7072A4F0BBC00FCA98D /* ChickenViewModel.swift in Sources */,
 				5AF3F7052A4EF69600FCA98D /* CategoryItem.swift in Sources */,
+				5A4560F42A5EE615006126C7 /* ProfileHost.swift in Sources */,
 				5AA283342A5185A9004C3B39 /* DrinksDetailsView.swift in Sources */,
 				5A1831C32A4DC49B00B0A6C8 /* ContentView.swift in Sources */,
 				5AC64FB22A51DACB00E52CA6 /* SearchView.swift in Sources */,
