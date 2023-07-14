@@ -52,28 +52,30 @@ struct CategoryHome: View {
     var body: some View {
         
         NavigationView{
-            List{
-                URLImageHome(urlString: "https://www.themealdb.com/images/category/dessert.png")
-                    .listRowInsets(EdgeInsets())
-                DessertCategoryRow()
-                    .listRowInsets(EdgeInsets())
-                CategoryRow()
-                    .listRowInsets(EdgeInsets())
-                ChickenCategoryRow()
-                    .listRowInsets(EdgeInsets())
-                
-            }
-            .listStyle(.inset)
-            .navigationTitle("MealMe")
-            .toolbar {
-                Button {
-                    showingProfile.toggle()
-                } label: {
-                    Label("User Profile", systemImage: "person.crop.circle")
+            ScrollView{
+                VStack{
+                    URLImageHome(urlString: "https://www.themealdb.com/images/category/dessert.png")
+                    
+                    DessertCategoryRow()
+                    
+                    CategoryRow()
+                    
+                    ChickenCategoryRow()
+                    
+                    
                 }
-            }
-            .sheet(isPresented: $showingProfile) {
-                ProfileHost()
+                .listStyle(.inset)
+                .navigationTitle("MealMe")
+                .toolbar {
+                    Button {
+                        showingProfile.toggle()
+                    } label: {
+                        Label("User Profile", systemImage: "person.crop.circle")
+                    }
+                }
+                .sheet(isPresented: $showingProfile) {
+                    ProfileHost()
+                }
             }
         }
         

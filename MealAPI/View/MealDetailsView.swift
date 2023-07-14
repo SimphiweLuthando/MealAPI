@@ -58,19 +58,25 @@ struct MealDetailsView: View {
             VStack {
                 URLImageDetailed(urlString: meal.strMealThumb)
                 
+
                 Text(meal.strMeal)
                     .font(.title)
                     .fontWeight(.heavy)
                 
-                Button(action: {
-                    viewModel.toggleFavoriteStatus(for: meal)
-                }) {
-                    Image(systemName: viewModel.isFavoriteMeal(meal) ? "heart.fill" : "heart")
-                        .foregroundColor(viewModel.isFavoriteMeal(meal) ? .green : .secondary)
-                }
-                .font(.title)
-                .frame(maxWidth: .infinity, alignment: .trailing)
+                HStack {
+                    TagView(meal: viewModel.mealDetailed.first?.strCategory ?? "")
+                        .padding(.leading, 10)
+                    
+                    Button(action: {
+                        viewModel.toggleFavoriteStatus(for: meal)
+                    }) {
+                        Image(systemName: viewModel.isFavoriteMeal(meal) ? "heart.fill" : "heart")
+                            .foregroundColor(viewModel.isFavoriteMeal(meal) ? .red : .secondary)
+                    }
+                    .font(.title)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
                 .padding(.trailing)
+                }
                    
                 
                 

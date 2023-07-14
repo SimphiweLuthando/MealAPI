@@ -64,6 +64,7 @@ struct MealDetailed: Hashable, Codable {
     let strMeasure19: String
     let strMeasure20: String
     let strYoutube: String
+
     // Add other properties if needed
     var id: String { idMeal }
     

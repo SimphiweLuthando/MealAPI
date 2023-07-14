@@ -46,32 +46,46 @@ struct DrinksListView: View {
     
     
     var body: some View {
-        NavigationView{
-            List(viewModel.drinks, id: \.self) { drink in
-                NavigationLink(destination: DrinksDetailsView(drinks: drink)) {
-                    HStack {
-                        URLImage(urlString: drink.strDrinkThumb)
-                        Text(drink.strDrink)
-                        Spacer()
-                        //                                    if viewModel.isFavoriteMeal(drink) {
-                        //                                        Image(systemName: "heart.fill")
-                        //                                            .foregroundColor(.red)
-                        //                                    }
-                    }
-                    .padding(3)
-                }
-            }
-            .navigationTitle("Drinks")
-            .onAppear {
-                viewModel.fetch()
-            }
-            //                        .onChange(of: viewModel.meals) { _ in
-            //                            // Reload the list whenever the meals array is updated
-            //                            //tableView.reloadData() // Replace this line if needed
-            //                        }
-            
-        }
+//        NavigationView{
+//            List(viewModel.drinks, id: \.self) { drink in
+//                NavigationLink(destination: DrinksDetailsView(drinks: drink)) {
+//                    HStack {
+//                        URLImageDrinksList(urlString: drink.strDrinkThumb)
+//                        Text(drink.strDrink)
+//                        Spacer()
+//                        //                                    if viewModel.isFavoriteMeal(drink) {
+//                        //                                        Image(systemName: "heart.fill")
+//                        //                                            .foregroundColor(.red)
+//                        //                                    }
+//                    }
+//                    .padding(3)
+//                }
+//            }
+//            .navigationTitle("Drinks")
+//            .onAppear {
+//                viewModel.fetch()
+//            }
+//
+//        }
         
+        let gridItems = [GridItem(.flexible()), GridItem(.flexible())]
+        
+        NavigationView{
+                    ScrollView {
+                        LazyVGrid(columns: gridItems, spacing: 10) {
+                            ForEach(viewModel.drinks, id: \.self) { drink in
+                                NavigationLink(destination: DrinksDetailsView(drinks: drink)) {
+                                    DrinksCardView(drink: drink)
+                                }
+                            }
+                        }
+                        .padding()
+                    }
+                    .navigationTitle("Drinks")
+                    .onAppear {
+                        viewModel.fetch()
+                    }
+                }
     }
 }
 

@@ -14,11 +14,12 @@ struct CategoryRow: View {
     
     var body: some View {
         VStack {
-            Text(categoryName)
-                .font(.headline)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.leading, 15)
-                .padding(.top, 5)
+                Text(categoryName)
+                    .font(.headline)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, 15)
+                    .padding(.top, 5)
+            
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
@@ -42,9 +43,9 @@ struct CategoryRow: View {
 struct CategoryRow_Previews: PreviewProvider {
     static var previews: some View {
         let sampleMeal = Meal(
-           idMeal: "52959", strMeal: "Baked Salmon with Fennel & Tomatoes",
-           strMealThumb: "https://www.themealdb.com/images/media/meals/1548772327.jpg"
-               )
+            idMeal: "52959", strMeal: "Baked Salmon with Fennel & Tomatoes",
+            strMealThumb: "https://www.themealdb.com/images/media/meals/1548772327.jpg"
+        )
         CategoryRow(categoryName: "Seafood", meals: [sampleMeal])
     }
 }

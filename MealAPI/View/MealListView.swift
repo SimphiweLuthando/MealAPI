@@ -17,7 +17,8 @@ struct URLImage: View{
         if let data = data, let uiimage = UIImage(data: data){
             Image(uiImage: uiimage)
                 .resizable()
-                .frame(width: 50, height: 50)
+            //                .frame(width: 50, height: 50)
+            
                 .cornerRadius(5)
         }
         else{
@@ -43,64 +44,99 @@ struct URLImage: View{
 
 struct MealListView: View {
     @StateObject var viewModel = ViewModel()
-
+    
     
     var body: some View {
-        NavigationView{
-//            List{
-//                ForEach(viewModel.meals, id: \.self){ meal in
-//                    NavigationLink(destination: MealDetailsView(meal: meal)){
-//                        HStack{
-//                            URLImage(urlString: meal.strMealThumb)
-//                            Text(meal.strMeal)
-//                            Spacer()
-//                            if viewModel.isFavoriteMeal(meal) {
-//                                           Image(systemName: "heart.fill")
-//                                    .foregroundColor(.red)
-//                                       }
+        //        NavigationView{
+        //
+        //            List(viewModel.meals, id: \.self) { meal in
+        //                            NavigationLink(destination: MealDetailsView(meal: meal)) {
+        //                                HStack {
+        //                                    URLImage(urlString: meal.strMealThumb)
+        //                                    Text(meal.strMeal)
+        //                                    Spacer()
+        //                                    if viewModel.isFavoriteMeal(meal) {
+        //                                        Image(systemName: "heart.fill")
+        //                                            .foregroundColor(.green)
+        //                                    }
+        //                                }
+        //                                .padding(3)
+        //                            }
+        //                        }
+        //                        .navigationTitle("Meals")
+        //                        .onAppear {
+        //                            viewModel.fetch()
+        //                        }
+        //                        .onChange(of: viewModel.meals) { _ in
+        //                            // Reload the list whenever the meals array is updated
+        //                            //tableView.reloadData() // Replace this line if needed
+        //                        }
+        //
+        //        }
+        //
+        //    }
+        
+        let gridItems = [GridItem(.flexible()), GridItem(.flexible())]
+        
+//        NavigationView {
+//            ScrollView {
+//                LazyVGrid(columns: gridItems, spacing: 10) {
+//                    ForEach(viewModel.meals, id: \.self) { meal in
+//                        NavigationLink(destination: MealDetailsView(meal: meal)) {
+//                            ZStack {
+//                                URLImage(urlString: meal.strMealThumb)
+//                                    .aspectRatio(1,contentMode: .fill)
+//                                    .frame(height: 150)
+//                                    .clipped()
+//
+//                                Text(meal.strMeal)
+//                                    .foregroundColor(.primary)
+//                                    .font(.body)
+//                                    .lineLimit(2)
+//                                    .multilineTextAlignment(.center)
+//                            }
+//                            .frame(maxWidth: .infinity)
+//                            .padding(8)
+//                            .background(Color.secondary.opacity(0.1))
+//                            .cornerRadius(8)
 //                        }
-//                        .padding(3)
 //                    }
-//
 //                }
-//
+//                .padding()
 //            }
 //            .navigationTitle("Meals")
-//            .onAppear{
+//            .onAppear {
 //                viewModel.fetch()
 //            }
 //            .onChange(of: viewModel.meals) { _ in
-//                            // Reload the list whenever the meals array is updated
-//
-//                        }
-            
-            List(viewModel.meals, id: \.self) { meal in
-                            NavigationLink(destination: MealDetailsView(meal: meal)) {
-                                HStack {
-                                    URLImage(urlString: meal.strMealThumb)
-                                    Text(meal.strMeal)
-                                    Spacer()
-                                    if viewModel.isFavoriteMeal(meal) {
-                                        Image(systemName: "heart.fill")
-                                            .foregroundColor(.green)
-                                    }
+//                // Reload the grid whenever the meals array is updated
+//            }
+//        }
+        
+        
+        NavigationView{
+                    ScrollView {
+                        LazyVGrid(columns: gridItems, spacing: 10) {
+                            ForEach(viewModel.meals, id: \.self) { meal in
+                                NavigationLink(destination: MealDetailsView(meal: meal)) {
+                                    CardView(meal: meal)
                                 }
-                                .padding(3)
                             }
                         }
-                        .navigationTitle("Meals")
-                        .onAppear {
-                            viewModel.fetch()
-                        }
-                        .onChange(of: viewModel.meals) { _ in
-                            // Reload the list whenever the meals array is updated
-                            //tableView.reloadData() // Replace this line if needed
-                        }
-            
-        }
-
+                        .padding()
+                    }
+                    .navigationTitle("Meals")
+                    .onAppear {
+                        viewModel.fetch()
+                    }
+                    .onChange(of: viewModel.meals) { _ in
+                        // Reload the grid whenever the meals array is updated
+                    }
+                }
+        
     }
 }
+
 
 struct MealListView_Previews: PreviewProvider {
     static var previews: some View {
