@@ -65,9 +65,18 @@ struct CardView: View {
                         .fontWeight(.bold)
                         .foregroundColor(.primary)
                     
-                    Text("Meal")
-                        .font(.footnote)
-                        .foregroundColor(SwiftUI.Color.gray)
+                    HStack {
+                        Text("Meal")
+                            .font(.footnote)
+                            .foregroundColor(SwiftUI.Color.gray)
+                        
+                        Spacer()
+                        
+                        if viewModel.isFavoriteMeal(meal) {
+                            Image(systemName: "heart.fill")
+                                .foregroundColor(.red)
+                        }
+                    }
                 }
                 .padding(.horizontal,12)
                 .padding(.bottom,11)

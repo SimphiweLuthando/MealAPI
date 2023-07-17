@@ -27,7 +27,7 @@ struct SearchView: View {
                     List(searchResults, id: \.self) { meal in
                         NavigationLink(destination: MealDetailsView(meal: meal)) {
                             HStack {
-                                URLImage(urlString: meal.strMealThumb)
+                                URLImageDrinksList(urlString: meal.strMealThumb)
                                 Text(meal.strMeal)
                                 Spacer()
                             }
