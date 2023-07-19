@@ -9,6 +9,18 @@ import SwiftUI
 import YouTubePlayerKit
 import AVKit
 
+struct CustomButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .padding(5)
+            .background(configuration.isPressed ? .pink : .white)
+            .foregroundColor(.white)
+            .clipShape(Capsule())
+            .scaleEffect(configuration.isPressed ? 1.9 : 1)
+            .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
+    }
+}
+
 struct URLImageDetailed: View{
     let urlString: String
     
@@ -75,7 +87,8 @@ struct MealDetailsView: View {
                     }
                     .font(.title)
                     .frame(maxWidth: .infinity, alignment: .trailing)
-                .padding(.trailing)
+                    .padding(.trailing)
+                    .buttonStyle(CustomButtonStyle())
                 }
                    
                 
@@ -107,11 +120,6 @@ struct MealDetailsView: View {
                     }
    
                 }
-                
-
-    
-                
-                
      
             }
             .onAppear{
