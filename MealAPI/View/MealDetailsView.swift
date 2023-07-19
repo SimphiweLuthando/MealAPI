@@ -12,9 +12,9 @@ import AVKit
 struct CustomButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .padding(5)
-            .background(configuration.isPressed ? .pink : .white)
-            .foregroundColor(.white)
+            .padding(7)
+//            .background(configuration.isPressed ? .pink : .mint)
+//            .foregroundColor(.white)
             .clipShape(Capsule())
             .scaleEffect(configuration.isPressed ? 1.9 : 1)
             .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
